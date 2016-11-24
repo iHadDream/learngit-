@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人中心</title>
+	 
+<style type="text/css">
+	 
+	body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+	}
+	body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	 
+	margin: 0;
+	padding: 0;	
+	text-align: center;
+	font-family: "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;	
+	color: #475766;
+
+	}
+	 
+	.header {
+	width: 100%;
+    height: 220px;
+    background: url("images/singleBanner.jpg") no-repeat center top #000000;
+    background-size:cover;
+	}
+	.user-info{
+		position: relative;
+		width: 712px;
+		padding-left: 241px;
+		padding-right: 247px;
+		padding-top: 60px;
+		margin: 0 auto;
+	}
+	.user-info .user-name{
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 40px;
+		text-align: left;
+		color: #ffffff;
+		padding-top: 20px;
+	}
+	.user-info .about-info{
+		font-size: 14px;
+		color: #ffffff;
+		line-height: 20px;
+		text-align: left;
+		margin-top: 6px;
+	}
+	.user-info .user-desc {
+	    font-size: 14px;
+	    line-height: 24px;
+	    color: #ffffff;
+	    text-align: left;
+	    margin-top: 20px;
+	    word-break: break-all;
+	    word-wrap: break-word;
+	    opacity: 0.5;
+}
+	.header span{
+    
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    margin-top:20px;
+	}
+	.message{
+		position: absolute;
+		top: 115px;
+		right: 10px;
+		min-width: 200px;
+		text-align: right;
+		margin-right: 40px;
+		height: 48px;
+		display: inline-block;
+	}
+	.message em{
+		display: block;
+		font-size: 18px;
+		line-height: 24px;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bold;
+	}
+	.message span{
+		display: block;
+		font-size: 14px;
+		color: #ffffff;
+		line-height: 24px;
+		text-align: center;
+		opacity: 0.5;
+	}
+	a:link, a:visited {
+    color: #14191e;
+}
+	a:link, a:visited {
+    color: #5e5e5e;
+}
+	:link, :visited, ins {
+    text-decoration: none;
+}
+	 
+	.footer {
+		clear:both;
+		padding: 10px 0;
+		background:#a0a0a0;
+		font-size:20px;
+		color: #5b5b5b;
+	}
+	 .footer-center{
+	 	margin-left: auto;
+	 	margin-right: auto;
+	 	width: 100%;
+	 }
+	.clearfloat { 
+		clear:both;
+		height:0;
+		font-size: 1px;
+		line-height: 0px;
+	}
+	.wrap{
+		position: relative;
+		width: 1200px;
+		margin: 0 auto;
+		height: 800px;
+	}
+	.slider{
+
+    position: absolute;
+    width: 200px;
+    left: 0;
+    top: -150px;
+
+	}
+	.slider ul li{
+		height: 60px;
+		border-bottom: 1px solid #EDF1F2;
+		width: 160px;
+		margin: 0 auto;
+	}
+	.slider ul a{
+		display: block;
+		height: 60px;
+		font-size: 16px;
+		line-height: 60px;
+		text-align: center;
+		color: #787d82;
+		font-family: '微软雅黑';
+	}
+	.slider ul a.active{
+		color: #F01400;
+		font-weight: bold;
+	}
+	.slider ul a:hover{
+		color: black;
+		font-size: 16px;
+	}
+	.pic-bg{
+		width: 200px;
+		height: 200px;
+		background-color: #ffffff;
+		 
+		border-radius: 100px;
+		transition: all .3s;
+		-moz-transition: all .3s;
+		-webkit-transition: all .3s;
+		-o-transition: all .3s;
+	}
+	.pic-bg img{
+		position: absolute;
+		left: 4px;
+		top: 4px;
+		width: 192px;
+		height: 192px;
+		border-radius: 95px;
+		transition: all .3s;
+		-moz-transition: all .3s;
+		-webkit-transition: all .3s;
+		-o-transition: all .3s;
+	}
+	/*u-container*/
+	.u-container {
+	    margin-left: 240px;
+	    min-height: 589px;
+	}
+	.dynamic{
+		padding-bottom: 21px;
+		border-bottom: 1px solid #CFD5D8;
+	}
+	.dynamic-title{
+		color: #787d82;
+		line-height: 14px;
+		margin-top: 10px;
+		padding-top: 25px;
+		font-size: 14px;
+		text-align: left;
+	}
+	.news{
+		padding-top: 40px;
+		text-align: left;
+		 
+
+	}
+	.news p{
+		padding-top: 30px;
+		color: #787d82;
+		font-size: 20px;
+		
+	}
+	.news p a:hover{
+		color: black;
+		cursor: pointer;
+	}
+	.news .news-time{
+
+		text-align: right;
+
+	}
+</style>
+</head>	
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="user-info">
+				<h3 class="user-name"><span style="font-size:32px;">楷文欧巴 </span></h3>
+				<p class="about-info"> 2014级本科生</p>
+				<p class="user-desc"> 这位同学很懒，木有签名的说～ </p>
+				<div class="message"><a href="#"><em>10</em><span>消息</span></a></div>
+			</div>
+		</div>
+
+		<div class="wrap">
+			<div class="slider">
+				<div class="pic-bg">
+					<img src="images/pic-bg.jpg" class="img">
+				</div>
+				<ul>
+					<li><a href="#" class="active">
+					<i class="icon-home"></i>
+					<span>主页</span>
+					<b class="icon-right"></b>
+					</a></li>
+
+					<li><a href="singleCMessage.html"  >
+					<i class="icon-home"></i>
+					<span>消息</span>
+					<b class="icon-right"></b>
+					</a></li>
+
+					<li><a href="#"  >
+					<i class="icon-home"></i>
+					<span>课程</span>
+					<b class="icon-right"></b>
+					</a></li>
+
+					<li><a href="singleCNotice.html"  >
+					<i class="icon-home"></i>
+					<span>通知</span>
+					<b class="icon-right"></b>
+					</a></li>
+
+					<li><a href="singleCSet.html"  >
+					<i class="icon-home"></i>
+					<span>设置</span>
+					<b class="icon-right"></b>
+					</a></li>
+					 
+					 	
+				</ul>
+			</div>
+			<div class="u-container">
+				<div class="dynamic">
+					<p class="dynamic-title">最新动态</p>
+				</div>
+				<div class="news">
+					<p><a>撒旦年soifno阿凡nod那发呆能否年soda放哪</a><span class="news-time">07/15</span></p>
+					<hr />
+					
+					<p><a>撒旦年soifno阿凡nod那发呆能否年soda放哪</a><span class="news-time">07/15</span></p>
+					<hr />
+					<p><a>撒旦年soifno阿凡nod那发呆能否年soda放哪</a><span class="news-time">07/15</span></p>
+					<hr />
+					<p><a>撒旦年soifno阿凡nod那发呆能否年soda放哪</a><span class="news-time">07/15</span></p>
+					<hr />
+				</div>
+				
+			</div>	
+				
+		</div>
+		 
+		 	<div class="footer">
+		     <div class="footer-center">
+		   		<img src="images/footer-logo.png">
+		    </div>
+		    <div class="footer-center" >版权所有©东北师范大学 信息与软件工程学院</div>
+		    <!-- end .footer --></div>
+	<!-- end .container --></div>
+	</div>
+</body>
+</html> 

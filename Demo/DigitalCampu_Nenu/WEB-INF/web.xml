@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>DigitalCampu_Nenu</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<jsp-config>
+		<taglib>
+			<taglib-uri>http://displaytag.sf.net</taglib-uri>
+			<taglib-location>/WEB-INF/displaytag.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+	<filter>
+		<filter-name>exportFilter</filter-name>
+		<filter-class>org.displaytag.filter.ResponseOverrideFilter</filter-class>
+	</filter>
+
+	<servlet>
+		<servlet-name>operateLogin</servlet-name>
+		<servlet-class>com.nenu.controler.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>operateLogin</servlet-name>
+		<url-pattern>/login.action</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>operateApplication</servlet-name>
+		<servlet-class>com.nenu.controler.operateApplicationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>operateApplication</servlet-name>
+		<url-pattern>/EducationalAdministration/operateApplication</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>operateNotice</servlet-name>
+		<servlet-class>com.nenu.controler.operateNoticeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>operateNotice</servlet-name>
+		<url-pattern>/EducationalAdministration/operateNotice</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>operateUser</servlet-name>
+		<servlet-class>com.nenu.controler.operateUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>operateUser</servlet-name>
+		<url-pattern>/CommonPage/operateUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>operateQandA</servlet-name>
+		<servlet-class>com.nenu.controler.operateQAndAServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>operateQandA</servlet-name>
+		<url-pattern>/EducationalAdministration/operateQandA</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+		<filter-name>Encoding</filter-name>
+		<filter-class>com.nenu.filter.EncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>Encoding</filter-name>
+		<url-pattern>/*</url-pattern>
+		<servlet-name>*</servlet-name>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>LoginStatusCheck</filter-name>
+		<filter-class>com.nenu.filter.LoginStatusCheckFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginStatusCheck</filter-name>
+		<url-pattern>/CommonPage/*</url-pattern>
+		<url-pattern>/EducationalAdministration/*</url-pattern>
+	</filter-mapping>
+<!-- 
+	<filter>
+		<filter-name>STUJurisdiction</filter-name>
+		<filter-class>com.nenu.filter.STUJurisdictionFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>STUJurisdiction</filter-name>
+		<url-pattern>/EducationalAdministration/applyClassroom.jsp</url-pattern>
+		<url-pattern>/EducationalAdministration/borrowClassroom.jsp</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>ASJurisdiction</filter-name>
+		<filter-class>com.nenu.filter.ASJurisdictionFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ASJurisdiction</filter-name>
+		<url-pattern>/EducationalAdministration/AS/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>JurisdictionOverview</filter-name>
+		<filter-class>com.nenu.filter.JurisdictionOverviewFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>JurisdictionOverview</filter-name>
+		<url-pattern>/EducationalAdministration/AS/*</url-pattern>
+		<url-pattern>/EducationalAdministration/applyClassroom.jsp</url-pattern>
+		<url-pattern>/EducationalAdministration/borrowClassroom.jsp</url-pattern>
+	</filter-mapping>
+ -->
+</web-app>

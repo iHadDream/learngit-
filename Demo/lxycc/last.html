@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>终极答辩</title>
+<link rel="stylesheet" href="public/libs/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="public/css/last.css">
+<style>
+/*头部*/
+    a:hover{text-decoration:none;}
+    a{text-decoration: none;color:#572703;}
+	#header{width:640px;margin:0 auto;text-align: center;}
+	#header .menu{ text-align:center;width:132px;margin-top:20px;margin-bottom:10px} 
+	#header .down{margin-top: 10px;}
+/*主体部分*/
+    .calendar{position: absolute;top: 220px;left: 850px;}
+	.container{width:598px;margin:10px auto;height:638px;}
+	.container h2{font-size:36px;color:#f98802;font-weight:bold;font-family: STKaiti;height:40px;line-height: 40px;text-align: center;}
+	.introduct{width:598px;height:auto;margin:10px auto;border: 9px solid #aea99d;padding:8px 6px;}
+	.introduct p{font-size: 12px;font-weight:bold;color: #572703;text-indent: 2em;}
+	.number{font-size: 14px;color:#fbf8f5;background-color:#f7a544;height:38px;line-height: 38px;width:598px;margin:-10px auto;text-align: center;}
+/*照片*/
+	.per-img{ margin:40px auto; width:580px;height:284px; }
+	/*.per-img li{margin-top: 9px; float:left; margin:0 20px;overflow:hidden;}*/
+	.per-img li{text-align：center;margin:4px 11px;float:left;overflow: hidden;}
+	.per-img .list{text-align:center; overflow: hidden;}
+	.per-img img{width:94px;height:126px;}
+	.per-img span{width:112px;height:20px;line-height:20px;margin:0px 13px;text-align:center;font-size: 16px;font-color:#572703;}
+	/*分页面*/
+	#page{height:30px;line-height: 30px;width: 580px;margin-left:30px;padding-top:28px;}
+	/*.page span{line-height:30px;height:30px;margin-right:20px;text-align: center;font-size: 16px;color:#572703;padding-left:15px;padding-right:15px;border:5px solid white;background: white;background-clip: padding-box;border-radius: 5px; cursor: pointer;font-weight: bold;}*/
+	#page .comment{line-height:30px;height:30px;margin-right:20px;text-align: center;font-size: 16px;color:#572703;padding-left:15px;padding-right:15px;border:5px solid white;background: white;background-clip: padding-box;border-radius: 5px; cursor: pointer;font-weight: bold;}
+	#page .active{line-height:30px;height:30px;margin-right:20px;text-align: center;font-size: 16px;color: white;padding-left:15px;padding-right:15px;border:5px solid #f7a544;background:#f7a544;background-clip: padding-box;border-radius: 5px; cursor: pointer;font-weight: bold;}
+
+	#page span:hover{background:#f7a544;color: white;font-weight: bold;border:5px solid #f7a544;  }
+	span .title-pic{display: block;background:#f7a544;color: white;}
+	#tab1_content{display: block;}
+	.img-class{display:none;}
+</style>
+</head>
+<body>
+	<div id="all-container">
+		<div id="header">
+			<img class="align-center menu" src="public/images/interview/nenu.png" alt=""><br>
+			<img class="align-center" src="public/images/interview/title.png" alt=""><br>
+			<img class="align-center down" src="public/images/interview/down.png" alt="">
+		</div>
+			<div class="calendar">
+			<a href="index.html">
+				<span class="glyphicon glyphicon-chevron-left" style="color: rgb(73, 0, 42); font-size: 16px;">返回首页</span>
+		    </a>
+		</div>
+		<div class="container">
+			<!-- 题目title -->
+			<h2>终极答辩</h2>
+			<!-- 这是介绍部分 -->
+			<div class="introduct">
+				<p class="content-text"> “理想与成才”报告团是我校为积极培育、深入挖掘大学生先进典型，展现我校学生的精神风貌，充分发挥先进典型的示范引领作用的特色平台。</p><p class="content-text">是学校多年来探索出的一条引导学生成长成才的重要途径，是对学生进行典型示范教育、推进社会主义核心价值观落细落小落实的重要载体，旨在通过表彰和宣传报告团成员的突出事迹，以“身边人讲述身边事、身边事影响身边人”的方式，与在校学生分享他们大学四年的学习收获、生活体验、成长感悟，在全校范围内营造崇尚先进、学习先进、争做先进的良好风气。</p><p class="content-text"> 自1996年至今，学校已成功组建了十五届“理想与成才”报告团，已有15届报告团的成员从师大出发，展示了我校优秀学子的风采。</p>
+			</div>
+			<p class="number">第十七届“理想与成才”报告团评选成员（以下内容按照名字英文字母排序）</p>
+			<!-- 下面是照片 -->
+			<div id="page">
+				<ul>
+					<li>
+						<span class="active comment" id="tab1" href="javascript">第一页</span>
+						<span class="comment" id="tab2" href="javascript">第二页</span>
+						<span class="comment" id="tab3" href="javascript">第三页</span>
+						<span class="comment" id="tab4" href="javascript">第四页</span>
+						<span class="comment" id="tab5" href="javascript">第五页</span>
+					</li>
+				</ul>
+			</div>
+			<div class="per-img">
+				<ul class="img-class" id="tab1_content">
+					<li><a href="views/baochongqing.html"><img src="public/images/pic/baocongqing.png" alt=""><br><span>&nbsp;&nbsp;包崇庆</span></a></li>
+					<li><a href="views/chengjunming.html"><img src="public/images/pic/chengjunming.png" alt=""><br><span>&nbsp;&nbsp;程钧铭</span></a></li>
+					<li><a href="views/guoyanbin.html"><img src="public/images/pic/guoyanbin.png" alt=""><br><span>&nbsp;&nbsp;郭艳斌</span></a></li>
+					<li><a href="views/houwenyu.html"><img src="public/images/pic/houwenyu.png" alt=""><br><span>&nbsp;&nbsp;侯文宇</span></a></li>
+					<li><a href="views/linke.html"><img src="public/images/pic/linke.png" alt=""><br><span>&nbsp;&nbsp;林  可</span></a></li>
+					<li><a href="views/liujuan.html"><img src="public/images/pic/liujuan.png" alt=""><br><span>&nbsp;&nbsp;刘娟</span></a></li>
+					<li><a href="views/liuminghao.html"><img src="public/images/pic/liuminghao.png" alt=""><br><span>&nbsp;&nbsp;刘明昊</span></a></li>
+					<li><a href="views/lvtianjiao.html"><img src="public/images/pic/lvtianjiao.png" alt=""><br><span>&nbsp;&nbsp;吕天骄</span></a></li>
+					<li><a href="views/maimaitiming.html"><img src="public/images/pic/maimaitiming.png" alt=""><br><span>买买提明</span></a></li>
+					<li><a href="views/mayingcai.html"><img src="public/images/pic/mayingcai.png" alt=""><br><span>&nbsp;马英才</span></a></li>
+					
+				</ul>
+				<ul class="img-class" id="tab2_content">
+					<li><a href="views/mengxiangyun.html"><img src="public/images/pic/mengxiangyun.png" alt=""><br><span>&nbsp;&nbsp;孟祥云</span></a></li>
+					<li><a href="views/shenfangyu.html"><img src="public/images/pic/shenfangyu.png" alt=""><br><span>&nbsp;&nbsp;申芳瑜</span></a></li>
+					<li><a href="views/sunminghui.html"><img src="public/images/pic/sunminghui.png" alt=""><br><span>&nbsp;&nbsp;孙铭徽</span></a></li>
+					<li><a href="views/wangsiyu.html"><img src="public/images/pic/wangsiyu.png" alt=""><br><span>&nbsp;&nbsp;王司宇</span></a></li>
+					<li><a href="views/wangtianzhuo.html"><img src="public/images/pic/wangtianzhuo.png" alt=""><br><span>&nbsp;&nbsp;王天卓</span></a></li>
+					<li><a href="views/xufei.html"><img src="public/images/pic/xufei.png" alt=""><br><span>&nbsp;&nbsp;徐 飞</span></a></li>
+					<li><a href="views/xuyunyue.html"><img src="public/images/pic/xuyunyue.png" alt=""><br><span>&nbsp;&nbsp;徐云月</span></a></li>
+					<li><a href="views/yangxiuyun.html"><img src="public/images/pic/yangxiuyun.png" alt=""><br><span>&nbsp;&nbsp;杨秀云</span></a></li>
+					<li><a href="views/yanni.html"><img src="public/images/pic/yanni.png" alt=""><br><span>&nbsp;&nbsp;燕妮</span></a></li>
+					<li><a href="views/yetingming.html"><img src="public/images/pic/yetingming.png" alt=""><br><span>&nbsp;&nbsp;叶挺铭</span></a></li>
+					
+				</ul>
+				<ul class="img-class" id="tab3_content" >
+					<li><a href="views/yuanchengrui.html"><img src="public/images/pic/yuanchengrui.png" alt=""><br><span>&nbsp;&nbsp;苑城睿</span></a></li>
+					<li><a href="views/yueyingying.html"><img src="public/images/pic/yueyingying.png" alt=""><br><span>&nbsp;&nbsp;岳盈盈</span></a></li>
+					<li><a href="views/zhudanwei.html"><img src="public/images/pic/zhudanwei.png" alt=""><br><span>&nbsp;&nbsp;朱丹炜</span></a></li>
+					<li><a href="views/zhouhuirong.html"><img src="public/images/pic/zhouhuirong.png" alt=""><br><span>&nbsp;&nbsp;周惠容</span></a></li>
+					<li><a href="views/zhangqian.html"><img src="public/images/pic/zhangqian.png" alt=""><br><span>&nbsp;&nbsp;张 茜</span></a></li>
+					<li><a href="views/zhangwanxiong.html"><img src="public/images/pic/zhangwanxiong.png" alt=""><br><span>&nbsp;&nbsp;张皖雄</span></a></li>
+					<li><a href="views/zhangzhong.html"><img src="public/images/pic/zhangzhong.png" alt=""><br><span>&nbsp;&nbsp;张仲</span></a></li>
+					<li><a href="views/zhouzilin.html"><img src="public/images/pic/zhouzilin.png" alt=""><br><span>&nbsp;&nbsp;周子琳</span></a></li>
+					<li><a href="views/zhengyuanyuan.html"><img src="public/images/pic/zhengyuanyuan.png" alt=""><br><span>&nbsp;&nbsp;郑媛渊</span></a></li>
+					<li><a href="views/zhuyuehan.html"><img src="public/images/pic/zhuyuehan.png" alt=""><br><span>&nbsp;&nbsp;朱岳涵</span></a></li>
+				</ul>
+				<ul class="img-class" id="tab4_content">
+				</ul>
+				<ul class="img-class" id="tab5_content">
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--footer start here-->
+	    <div class="foot">
+	    <div class="foot-container">
+	            <p>
+	                <a href="#" target="_blank">|版权所有|</a>
+	                <a href="#" target="_blank">关于我们|</a>
+	                <a href="#" target="_blank">易班工作室|</a></br></br>
+	                <a href="#" target="_blank">地址:东北师范大学净月校区大学生活动中心二楼易班工作室
+	                </a>
+	            </p>
+	    	</div>
+		</div>
+		<!--footer end here-->
+<script src="public/libs/jquery/dist/jquery.min.js"></script>
+
+<script>
+	$(function(){
+		$('#page span').click(function(event){
+			var id=$(this).attr('id');
+			var tab_id=id+'_content';
+			var $tab=$('#'+tab_id);
+			$('.img-class').hide();
+			$tab.show();
+
+			$('#page span').removeClass('active');
+			$(this).addClass('active');
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/educated.css" type="text/css">
+ 
+<link rel="stylesheet" type="text/css" href="css/questionAnswer.css">
+<link rel="stylesheet" href="css/lendClass.css">
+<script language="javascript" type="text/javascript" src="./tubiao1_files/jquery.js"></script>
+  <script language="javascript" type="text/javascript" src="./tubiao1_files/jquery.flot.js"></script>
+  <script language="javascript" type="text/javascript" src="./tubiao1_files/jquery.flot.pie.js"></script>
+<title>教务管理系统</title>
+<style>
+
+ 
+  
+
+</style>
+ <script type="text/javascript">
+
+  $(function() {
+
+     
+    var data = [
+      { label: "大部分能听懂",  data: 20},
+      { label: "能听懂",  data: 40},
+      { label: "有一些能听懂",  data: 20},
+      { label: "听不懂",  data: 10},
+      { label: "完全听不懂",  data: 10}
+    ];
+
+    //$.plot("#placeholder", [ d1, d2, d3 ]);
+    
+    $.plot('#placeholder', data, {
+      series: {
+        pie: {
+          show: true,
+          radius: 3/4,
+          label: {
+            show: true,
+            radius: 3/4,
+            formatter: labelFormatter,
+            background: {
+              opacity: 0.5,
+              color: '#000'
+            }
+          }
+        }
+      },
+      legend: {
+        show: false
+      }
+    });
+  });
+  function labelFormatter(label, series) {
+    //return "<div style='font-size:8pt; text-align:center; padding:2px; color:white;'>" + label + "<br/>" + Math.round(series.percent) + "%</div>";
+    return "<div style='font-size:8pt; text-align:center; padding:2px; color:white;'>" + label + "(分值：" + series.data[0][1] +'%' +")</div>";
+  }
+  </script>
+</head>
+
+<body>
+
+<div class="container">
+  
+  	
+  	<img src="images/banner2.jpg" alt="在此处插入徽标" name="Insert_logo"  id="Insert_logo" style=" display:block;" />
+  
+  <div class="header">
+    <!-- end .header --></div>
+     <div class="lianjie">
+     <span>您的位置:&nbsp;<a href="index.html">首页</a>>><a href="educated.html">教务管理系统</a>>>
+     <a href="#">教学信息反馈</a></span>
+  </div>
+    <div class="sidebar1">
+   
+     <img src="images/jiaowuchu.png">
+      <!-- 学生网上服务中心 -->
+	     <ol class="rounded-list">
+	      	<li><a href="questionAnswer.html">教务答疑</a></li>
+          <li><a href="lendClass.html">借教室</a></li>
+          <li><a href="feedback.html">教学信息反馈</a></li>
+          <li><a href="">论坛</a></li>
+          <li><a href="single.html">个人中心</a></li>
+	      	 
+	      </ol>
+	   
+      
+	   
+     
+    <p>&nbsp;</p>
+    <!-- end .sidebar1 --></div>
+      <div class="content"  style="padding-top:1px;">
+       
+         <div id="header1">
+                <h2>数据库原理课程</h2>
+                <hr/>
+                <h3>
+                <select>
+                    <option value ="volvo">第一题</option>
+                    <option value ="saab">第二题</option>
+                    <option value="opel">第三题</option>
+                    <option value="audi">第四题</option>
+                </select><br/>
+                 教师讲课是否能听懂？</h3>
+              </div> 
+              <div id="content1"> 
+                <div class="demo-container1">
+                  <div id="placeholder" class="demo-placeholder" style="padding: 0px; position: relative;width:700px;height:400px;margin:0px auto;">
+                  
+                  </div>
+                </div>
+
+           </div>
+           
+             
+        
+ 
+ 
+   <!-- end .content --></div>
+
+  <div class="footer">
+     
+     <div class="footer-center">
+      <img src="images/footer-logo.png">
+    </div>
+    <div class="footer-center" >版权所有©东北师范大学 信息与软件工程学院</div>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>
+ 
+
+   

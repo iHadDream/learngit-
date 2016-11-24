@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0062)http://www.flotcharts.org/flot/examples/basic-usage/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>能力评估</title>
+	<link href="./tubiao1_files/examples.css" rel="stylesheet" type="text/css">
+	<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../../excanvas.min.js"></script><![endif]-->
+	<script language="javascript" type="text/javascript" src="./tubiao1_files/jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="./tubiao1_files/jquery.flot.js"></script>
+	<script type="text/javascript">
+
+	$(function() {
+
+		 
+		var d1 = [[0, 4], [1, 5], [2, 5]  , [3, 3],[4,5]]; 
+		var d2 = [[0, 4], [1, 4], [2, 4.5], [3, 3],[4,4]]; 
+
+		//$.plot("#placeholder", [ d1, d2, d3 ]);
+		
+		var data = [{ data: d1, label: "预期能力" },{ data: d2, label: "实际能力" }];
+		$.plot($("#placeholder"), data,
+		
+		 {
+			series: {
+				lines: { show: true },
+				points: { show: true }
+			},
+			xaxis: {
+				ticks: [
+					[0,'需求分析'] ,
+					[1,'系统设计'] ,
+					[2,'代码编写'] ,
+					[3,'测试'] ,
+					[4,'代码维护'] 
+				]
+			},
+			yaxis: {
+				//ticks: 5,
+				min: 0,
+				//max: 2,
+				tickDecimals: 0
+			},
+			grid: {
+				backgroundColor: { colors: [ "#fff", "#eee" ] }
+				
+			}
+		}
+		);	
+	});
+	</script>
+</head>
+<body style="background-color:#FFF" >
+
+	<div id="header1">
+		<h2>能力评估</h2>
+		<hr/>
+		<h4>学生姓名：张磊<br/>
+		所学专业：软件工程<br/>
+		评估时间：第4学期<br/></h3>
+	</div> 
+	<div id="content1"> 
+		<div class="demo-container1">
+			<div id="placeholder" class="demo-placeholder" style="padding: 0px; position: relative;width:700px;height:400px;margin:0px auto;">
+			
+			</div>
+		</div>
+
+	</div>
+ 
+
+
+</body></html>

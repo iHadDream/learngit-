@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+<script src="js\jquery-ui-1.11.4.custom\jquery-ui.min.js"></script>
+ 
+<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+
+<link rel="stylesheet" type="text/css" href="css/educated.css">
+<link rel="stylesheet" type="text/css" href="css/questionAnswer.css">
+<script src="js/xcConfirm.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="css/xcConfirm.css"/>
+ 
+<title>教务答疑</title>
+ <style>
+    .qANavigation .search{
+    margin-top: 6px;
+     margin-left: 260px;
+  }
+  .btn6{
+    cursor: pointer;
+  }
+ 
+    </style>
+  
+  
+ 
+<script type="text/javascript">
+   
+      
+            //隔行变色  
+        $(document).ready(function(){  
+                  
+                 $(".stripe_tb tr").mouseover(function(){ //如果鼠标移到class为stripe_tb的表格的tr上时，执行函数  
+                 $(this).addClass("over");}).mouseout(function(){ //给这行添加class值为over，并且当鼠标一出该行时执行函数  
+                 $(this).removeClass("over");}) //移除该行的class  
+                 $(".stripe_tb tr:even").addClass("alt"); //给class为stripe_tb的表格的偶数行添加class值为alt  
+                  
+            });  
+        
+   
+   </script>
+</head>
+
+<body>
+
+<div class="container">
+  
+    
+    <img src="images/banner2.jpg" alt="在此处插入徽标" name="Insert_logo"  id="Insert_logo" style=" display:block;" />
+  
+  <div class="header">
+    <!-- end .header --></div>
+     <div class="lianjie">
+     <span>您的位置:&nbsp;<a href="index.html">首页</a>&gt;&gt;<a href="educatedManage.html">教务管理系统</a>&gt;&gt;
+     <a href="#">教务答疑</a></span>
+  </div>
+    <div class="sidebar1">
+   
+     <img src="images/jiaowuchu.png">
+      <!-- 学生网上服务中心 -->
+       <ol class="rounded-list">
+           <li><a href="noticeTeacher.html">教务公告</a></li>
+          <li><a href="qAteacher.html">教务答疑</a></li>
+          <li><a href="lendClassTeacher.html">借教室</a></li>
+          <li><a href="feedbackTeacher.html">教学信息反馈</a></li>         
+          <li><a href="singleCenter.html" target="blank">个人中心</a></li>
+           <li><a href="userManagement.html">用户管理</a></li>
+        </ol>
+     
+      
+     
+     
+    <p>&nbsp;</p>
+    <!-- end .sidebar1 --></div>
+   
+    <div class="content"  style="padding-top:1px;">
+       
+         
+           
+              <div class="qANavigation">
+                  <ul>
+                    <li class="selected">审核答疑 </li>
+                    <li>已回复 </li>
+                    <li >未回复 </li>
+                    
+                  </ul>
+                  <input type="text" class="search" placeholder="请输入关键词"></input>
+                  <input type="button" class="blue bigrounded" value="搜索" />
+                        
+              </div>
+       <div id="tab-content">  
+       <script type="text/javascript">
+                 $(function(){
+                      
+                      $(".btn6").click(function(){
+                        var txt=  "请输入回复信息：";
+                        window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.input,{
+                          onOk:function(v){
+                            console.log(v);
+                                           
+                          }
+                        });
+                      });
+                      
+                    });
+     </script>  
+   <!-- 三个切换卡 -->   
+        
+         <table class="stripe_tb" >
+           <tr style="height:0;">
+              <th style="width:400px"></th>
+               <th style="width:100px"></th>
+            
+              <th style="width:130px"></th>
+             
+                <th style="width:60px"></th>
+              <th style="width:90px"></th>
+          </tr><!-- 限制表格宽度 -->
+          <tr class="contentTitle"><td>主题</td><td >提问者</td><td >时间</td><td >点击量</td><td >状态</td></tr>
+            <tr>            
+              <td class="news"><a href="qANochild.html" >老 校为我们实习的人拨发1200元实习费用，同学们都收 有收到，请问是漏发了么？求回复</a></td>
+              <td>赵小秦</td>
+              
+              <td class="date">2016/8/23</td>
+              <td>12</td>
+               <td class="btn6">未回复</td>
+            </tr>
+            <tr >
+           
+              <td class="news"><a href="qANochild.html">老师您好！我是文学院2013级的免费师范生， 们实习 有收到，请问是漏发了么？求回复</a></td>
+              <td>赵小秦</td>
+              
+              <td class="date">2016/8/23</td>
+              <td>12</td>
+               <td class="btn6">未回复</td>
+            </tr>
+
+            <tr>
+           
+              <td class="news"><a href="qAchild.html">老师您好！我是文学院2013级的免费师范生，近期学校为我们实习 发了么？求回复</a></td>
+              <td>赵小秦</td>
+              
+              <td class="date">2016/8/23</td>
+              <td>12</td>
+               <td class="btn6">已回复</td>
+            </tr>
+            <tr >
+           
+             <td class="news"><a href="qAchild.html">老 们实习的人拨发1200元实习费用，同学们 ，请问是漏发了么？求回复</a></td>
+              <td>赵小秦</td>
+              
+              <td class="date">2016/8/23</td>
+              <td>12</td>
+               <td class="btn6">已回复</td>
+            </tr>
+             
+          
+          </table>
+
+          <table class="stripe_tb hide" >
+            <tr style="height:0;">
+              <th style="width:400px"></th>
+               <th style="width:100px"></th>
+            
+              <th style="width:130px"></th>
+             
+                <th style="width:60px"></th>
+              <th style="width:90px"></th>
+          </tr><!-- 限制表格宽度 -->
+          <tr class="contentTitle"><td>主题</td><td >提问者</td><td >时间</td><td >点击量</td><td >状态</td></tr>
+            <tr>            
+              <td class="news"><a href="qAchild.html" >老 校为我们实习的人拨发1200元实习费用，同学们都收 有收到，请问是漏发了么？求回复</a></td>
+              <td>赵小秦</td>
+              
+              <td class="date">2016/8/23</td>
+              <td>12</td>
+               <td class="btn6">已回复</td>
+            </tr>
+            <tr >
+           
+              <td class="news"><a href="qAchild.html">老师您好！我是文学院2013级的免费师范生， 们实习 有收到，请问是漏发了么？求回复</a></td>
+              <td>赵小秦</td>
+              
+              <td class="date">2016/8/23</td>
+              <td>12</td>
+               <td class="btn6">已回复</td>
+            </tr>
+
+            <tr>
+           
+              <td class="news"><a href="qAchild.html">老师您好！我是文学院2013级的免费师范生，近期学校为我们实习 发了么？求回复</a></td>
+              <td>赵小秦</td>
+              
+              <td class="date">2016/8/23</td>
+              <td>12</td>
+               <td class="btn6">已回复</td>
+            </tr>
+            <tr >
+           
+             <td class="news"><a href="qAchild.html">老 们实习的人拨发1200元实习费用，同学们 ，请问是漏发了么？求回复</a></td>
+              <td>赵小秦</td>
+              
+              <td class="date">2016/8/23</td>
+              <td>12</td>
+               <td class="btn6">已回复</td>
+            </tr>
+             
+          
+          </table>
+
+          <table class="stripe_tb hide" >
+            <tr style="height:0;">
+              <th style="width:400px"></th>
+               <th style="width:100px"></th>
+            
+              <th style="width:130px"></th>
+             
+                <th style="width:60px"></th>
+              <th style="width:90px"></th>
+          </tr><!-- 限制表格宽度 -->
+          <tr class="contentTitle"><td>主题</td><td >提问者</td><td >时间</td><td >点击量</td><td >状态</td></tr>
+            <tr>            
+              <td class="news"><a href="qANochild.html" >老 校为我们实习的人拨发1200元实习费用，同学们都收 有收到，请问是漏发了么？求回复</a></td>
+              <td>赵小秦</td>
+              
+              <td class="date">2016/8/23</td>
+              <td>12</td>
+               <td class="btn6">未回复</td>
+            </tr>
+            <tr >
+           
+              <td class="news"><a href="qANochild.html">老师您好！我是文学院2013级的免费师范生， 们实习 有收到，请问是漏发了么？求回复</a></td>
+              <td>赵小秦</td>
+              
+              <td class="date">2016/8/23</td>
+              <td>12</td>
+               <td class="btn6">未回复</td>
+            </tr>
+
+            <tr>
+           
+              <td class="news"><a href="qANochild.html">老师您好！我是文学院2013级的免费师范生，近期学校为我们实习 发了么？求回复</a></td>
+              <td>赵小秦</td>
+              
+              <td class="date">2016/8/23</td>
+              <td>12</td>
+               <td class="btn6">未回复</td>
+            </tr>
+            <tr >
+           
+             <td class="news"><a href="qANochild.html">老 们实习的人拨发1200元实习费用，同学们 ，请问是漏发了么？求回复</a></td>
+              <td>赵小秦</td>
+              
+              <td class="date">2016/8/23</td>
+              <td>12</td>
+               <td class="btn6">未回复</td>
+            </tr>
+             
+          
+          </table>
+           
+           
+           
+        
+               
+           
+
+           
+         
+
+    </div> <!--   -->    
+        <script type="text/javascript">
+     
+         $('.qANavigation li').click(function(){
+         $(this).addClass("selected").siblings().removeClass("selected");//removeClass就是删除当前其他类；只有当前对象有addClass("selected")；siblings()意思就是当前对象的同级元素，removeClass就是删除；
+         $("#tab-content > table").hide().eq($('.qANavigation li').index(this)).show();
+         });
+
+        
+        
+          
+        </script>
+ 
+ 
+   <!-- end .content --></div>
+  <!-- end .content -->
+
+  <div class="footer">
+     
+     <div class="footer-center">
+      <img src="images/footer-logo.png">
+    </div>
+    <div class="footer-center" >版权所有©东北师范大学 信息与软件工程学院</div>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

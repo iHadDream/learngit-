@@ -1,0 +1,173 @@
+html,body { 
+		margin:0 auto; 
+		font:12px Arial,Helvetica,sans-serif,ËÎÌå; 
+		text-align: center; 
+		overflow-x:hidden; 
+		color:#000;
+	}
+	.header{
+		margin: 0 auto;
+		width: 800px;
+		height: 434px;
+		overflow: hidden;
+	}
+	.in-nav-home{
+		margin: 0 auto;
+		color: #572703;
+		width: 800px;
+		font-size: 20px;
+		border-left:1px solid gray ;
+		border-right:1px solid gray;
+	}
+	.in-nav-home ol{
+		width: 350px;
+		margin-bottom: 0px;		 
+		padding-left: 0px;
+	}
+	.in-nav-home a{
+		 
+		color: #572703;
+		font-weight: bold;
+		letter-spacing: 1px;
+		padding-left: 2px; 
+
+	}
+	.content{
+		margin: 0 auto;
+		width:800px;
+		height: 1750px;
+		
+		border:1px solid gray;
+		 
+		position: relative;
+		 
+	}
+	.in-photograph{
+		width: 180px;
+		height: 220px;
+		position: absolute;
+		border:1px solid gray;
+		margin-left: 40px;
+		margin-top: 45px; 
+		overflow: hidden;
+	}
+	.in-photograph img{
+		padding-top:7px;
+	}
+	.in-intro{
+		width: 400px;
+		margin-left: 300px;
+		height: 220px;
+	}
+	.in-intro h1{
+		color:#572703;
+		font-weight: bold;
+	}
+	.in-intro-content{
+		width: 442px;
+		text-align: left;
+		font-weight: bold;
+		font-size: 20px;
+		color:rgb(237, 107, 58);
+	}
+	.in-intro-detail{
+		width: 100px;
+		margin-right: 0px;
+	}
+	.in-other{
+		width: 180px;
+		height:2000px;
+		position: absolute;
+		 
+		 
+		margin-top: 45px; 
+		 
+	}
+	.in-other-content{
+		width: 180px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+
+		 
+        background:gray;
+		 
+		 
+		color: white;
+		border-radius: 5px;
+		margin-bottom: 5px;
+		list-style: none;
+		 
+	}
+	.in-other-content a{
+		color: #572703;
+
+	}
+	.in-other-content a:hover{
+		color:black;
+		 
+		 
+		text-decoration: none;
+		display:block;
+
+	}
+	
+	.in-report{
+		width: 549px;
+		margin-left: 240px;
+		
+		height:1424px;
+		margin-top: 40px;
+		line-height: 200%;
+		letter-spacing:1px;
+		overflow-x: hidden;
+		position:relative;
+		 
+	}
+	.in-report h1{
+		color:#572703;
+		font-weight: bold;
+	}
+	.in-report p{
+		    
+				line-height: 30px;
+				font-size: 20px;
+				font-weight: 700;
+				font-family: ·ÂËÎ;
+				margin:0 auto;  				
+				text-indent:28px;  			  
+				text-align:align;  
+				text-justify:inter-ideograph;  
+				font-size:14px;
+	}  
+	
+	.in-report h3{
+			text-align: center;
+		    
+		    
+		    font-weight: 700;
+		    font-family: ·ÂËÎ;
+		    color:rgb(237, 107, 58);
+	}
+	.in-report-content{
+		width:532px;
+		height:1270px;
+		line-height: 30px;
+		font-size: 20px;
+		font-weight: 700;
+		font-family: ·ÂËÎ;
+		margin:0 auto;  				
+		text-indent:28px;  			  
+		text-align:justify;  
+		text-justify:inter-ideograph;  
+		font-size:14px;
+		 
+	}
+	.footer{
+		margin:0 auto; 
+		width: 800px;
+		position: relative;
+		margin-top:0px;
+	}

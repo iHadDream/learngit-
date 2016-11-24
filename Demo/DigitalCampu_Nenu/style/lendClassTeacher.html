@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+<script src="js\jquery-ui-1.11.4.custom\jquery-ui.min.js"></script>
+ 
+<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+
+<link rel="stylesheet" type="text/css" href="css/educated.css">
+<link rel="stylesheet" type="text/css" href="css/questionAnswer.css">
+<script src="js/xcConfirm.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="css/xcConfirm.css"/>
+ 
+<title>教务答疑</title>
+ <style>
+    .qANavigation .search{
+    margin-top: 6px;
+     margin-left: 460px;
+  }
+  .btn6{
+    cursor: pointer;
+  }
+  .news{
+    width: 600px;
+  
+  }
+    </style>
+  
+  
+ 
+<script type="text/javascript">
+   
+      
+            //隔行变色  
+        $(document).ready(function(){  
+                  
+                 $(".stripe_tb tr").mouseover(function(){ //如果鼠标移到class为stripe_tb的表格的tr上时，执行函数  
+                 $(this).addClass("over");}).mouseout(function(){ //给这行添加class值为over，并且当鼠标一出该行时执行函数  
+                 $(this).removeClass("over");}) //移除该行的class  
+                 $(".stripe_tb tr:even").addClass("alt"); //给class为stripe_tb的表格的偶数行添加class值为alt  
+                  
+            });  
+     
+   </script>
+</head>
+
+<body >
+
+<div class="container">
+  
+    
+    <img src="images/banner2.jpg" alt="在此处插入徽标" name="Insert_logo"  id="Insert_logo" style=" display:block;" />
+  
+  <div class="header">
+    <!-- end .header --></div>
+     <div class="lianjie">
+    <span>您的位置:&nbsp;<a href="index.html">首页</a>&gt;&gt;
+      <a href="educatedManage.html">教务管理系统</a>&gt;&gt; 
+     <a href="#">借教室</a></span>
+  </div>
+    <div class="sidebar1">
+   
+     <img src="images/jiaowuchu.png">
+      <!-- 学生网上服务中心 -->
+       <ol class="rounded-list">
+          
+            <li><a href="noticeTeacher.html">教务公告</a></li>
+          <li><a href="qAteacher.html">教务答疑</a></li>
+          <li><a href="lendClassTeacher.html">借教室</a></li>
+          <li><a href="feedbackTeacher.html">教学信息反馈</a></li>         
+          <li><a href="singleCenter.html" target="blank">个人中心</a></li>
+           <li><a href="userManagement.html">用户管理</a></li>
+           
+        </ol>
+     
+      
+     
+     
+    <p>&nbsp;</p>
+    <!-- end .sidebar1 --></div>
+    <script type="text/javascript">
+   $(function(){
+        $("#btn2").click(function(){
+          var txt=  "确定将教室借出吗？";
+          window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.confirm);
+                     
+        });
+        $("#btn6").click(function(){
+          var txt=  "请输入原因：";
+          window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.input,{
+            onOk:function(v){
+              console.log(v);
+                             
+            }
+          });
+        });
+        
+      });
+   </script>
+   
+    <div class="content"  style="padding-top:1px;">
+       
+         
+           
+              <div class="qANavigation">
+                  <ul>
+                    <li class="selected">审核列表 </li>
+                    
+                  </ul>
+                  <input type="text" class="search" placeholder="请输入关键词"></input>
+                  <input type="button" class="blue bigrounded" value="搜索" />
+                        
+              </div>
+       <div id="tab-content">  
+       
+        
+         <table class="stripe_tb" >
+           <tr style="height:0;">
+             <th style="width:400px"></th>
+               <th style="width:40px"></th>
+              <th style="width:200px"></th>
+               <th style="width:60px"></th>
+              <th style="width:40px"></th>
+          </tr>
+               <thead>
+              <tr>
+                <td >申请理由</td>
+                <td>申请人</td>
+                <td>申请地点</td>
+                <td class="date">申请时间</td>
+                <td colspan="2">状态</td>
+                
+              </tr>
+            </thead>
+
+            <tr>
+              <td class="news">ACM校赛需要借用一楼机房</td>
+              <td>申请人</td>
+              <td>教室</td>
+              <td class="date">时间</td>
+              <td><a id="btn2">同意</a></td>
+              <td><a id="btn6">拒绝</a></td>
+            </tr>
+            
+           
+
+           
+          
+          </table>
+           
+        
+               
+           
+
+           
+         
+
+    </div> <!--   -->    
+        
+ 
+ 
+   <!-- end .content --></div>
+  <!-- end .content -->
+
+  <div class="footer">
+     
+     <div class="footer-center">
+      <img src="images/footer-logo.png">
+    </div>
+    <div class="footer-center" >版权所有©东北师范大学 信息与软件工程学院</div>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>
+  
+          
+     

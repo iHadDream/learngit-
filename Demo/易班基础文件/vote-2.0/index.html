@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<head>
+	<style>
+		{
+			margin-left:-250px!important;/*FF IE7 该值为本身宽的一半 */
+			margin-top:-250px!important;/*FF IE7 该值为本身高的一半*/
+
+			margin-top:0px;
+
+			position:fixed!important;/*FF IE7*/
+			position:absolute;/*IE6*/
+
+			_top:expression(eval(document.compatMode &&document.compatMode=='CSS1Compat')?
+documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+
+
+		}</style>
+	<title>index</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+	<!-- Custom Theme files -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- //end-smoth-scrolling -->
+</head>
+<body>
+<!--header start here-->
+<div class="header">
+	<div class="container">
+		<div class="header-main">
+			<div class="header-left">
+				<div class="logo">
+					<a href="index.html"><h1><img src="images/logo.gif">理想与成才报告团</h1></a>
+				</div>
+				<div class="top-nav">
+					<ul class="res">
+						<li>|<a href="huigu.html">活动介绍</a>|</li>
+						<li>|<a href="huigu.html">往期回顾</a>|</li>
+						<li>|<a href="zuixin.html">最新投票</a>|</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-right">
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--header end here-->
+<!--banner start here-->
+<script src="js/responsiveslides.min.js"></script>
+<script>
+	$(function () {
+		$("#slider").responsiveSlides({
+			auto: true,
+			speed: 500,
+			namespace: "callbacks",
+			pager: true
+		});
+	});
+</script>
+<div class="slider">
+	<div class="callbacks_container">
+		<ul class="rslides" id="slider">
+			<li>
+				<div class="banner">
+					<img src="images/b1.jpg">
+				</div>
+			</li>
+			<li>
+				<div class="banner1">
+					<img src="images/b2.jpg">
+				</div>
+			</li>
+			<li>
+				<div class="banner2">
+					<img src="images/b3.jpg">
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			<p> Copyright &copy; 2015.东北师范大学 All rights reserved by 易班工作室</p>
+		</div>
+	</div>
+</div>
+<!--footer end here-->
+</body>
+</html>

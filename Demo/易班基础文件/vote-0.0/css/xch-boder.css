@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+#boder{
+background: url(../images/xch_07.jpg);
+height: 88px;
+width: 1100px;
+margin-right: auto;
+margin-left: auto;
+margin-top:-10px;
+/*上下的div之间有是像素bug
+/*/
+	}

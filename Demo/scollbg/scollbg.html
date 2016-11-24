@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XXX</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+
+	}
+	 #container{
+	 	width: 600px;
+	 	height: 400px;
+	 	 overflow: hidden;
+		position: relative;
+	 }
+	#bg{
+		width: 2400px;
+		height: 400px;
+		position: absolute;
+		z-index: 1;
+		
+	}
+	#bg img{
+		float: left;
+	}
+</style>
+</head>
+<body onload="startPic()">
+<div id="container">
+	<div  id="bg" style="left:-600px;"    >
+		  
+		<img src="1.jpg" alt="" class="bgimg" id="img1">
+		<img src="2.jpg" alt="" class="bgimg" id="img2">
+		<img src="3.jpg" alt="" class="bgimg" id="img3">
+		<img src="4.jpg" alt="" class="bgimg" id="img4">
+		 
+		 
+	</div>
+</div>
+	 <script type="text/javascript">
+	 	var bg=document.getElementById("bg");
+	 	var img_=document.getElementsByTagName("img");
+	 	var prev = document.getElementById("prev");
+
+	 	var next = document.getElementById("next");
+	 	var timer;
+	 function run(){
+	 	if(bg.style.left>= -7680 + "px"){
+	 		bg.style.left = 0 + "px";
+	 	}
+	 		bg.style.left = parseInt(bg.style.left) - 1920 + "px";
+	 		timer=setTimeout('run()',2000);
+	 }
+	 	
+ 
+	 
+	 function startPic(){
+	 	timer=setTimeout('run()',2000);
+	 }	
+	
+	  
+	 	 
+	 </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+	}
+	body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	 
+	margin: 0 auto;
+	padding: 0;	
+	text-align: center;
+	font-family: "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;	
+	color: #475766;
+	max-width:1366px;
+
+	}
+	 
+	.header {
+	width: 100%;
+    
+    
+    background-size:cover;
+	}
+ 
+	.header span{
+    
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    margin-top:20px;
+	}
+	.message{
+		position: absolute;
+		top: 115px;
+		right: 10px;
+		min-width: 200px;
+		text-align: right;
+		margin-right: 40px;
+		height: 48px;
+		display: inline-block;
+	}
+	.message em{
+		display: block;
+		font-size: 18px;
+		line-height: 24px;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bold;
+	}
+	.message span{
+		display: block;
+		font-size: 14px;
+		color: #ffffff;
+		line-height: 24px;
+		text-align: center;
+		opacity: 0.5;
+	}
+	a:link, a:visited {
+    color: #14191e;
+}
+	a:link, a:visited {
+    color: #5e5e5e;
+}
+	:link, :visited, ins {
+    text-decoration: none;
+}
+	 
+	.footer {
+		clear:both;
+		padding: 10px 0;
+		background:#a0a0a0;
+		font-size:20px;
+		color: #5b5b5b;
+	}
+	 .footer-center{
+	 	margin-left: auto;
+	 	margin-right: auto;
+	 	width: 100%;
+	 }
+	.clearfloat { 
+		clear:both;
+		height:0;
+		font-size: 1px;
+		line-height: 0px;
+	}
+	.wrap{
+		position: relative;
+		width: 1200px;
+		margin: 0px auto;
+		height: 800px;
+	}
+	.self{
+		position: absolute;
+		width: 1200px;
+	 	margin-bottom: 20px;
+		 
+		text-align: right;
+	}
+	 
+	.selfUser{
+		 font-weight: bold;
+		right: 0px;
+	}
+	.slider{
+
+    position: absolute;
+    width: 200px;
+    left: 0;
+    margin-top: 20px;
+
+	}
+	.slider ul li{
+		height: 60px;
+		border-bottom: 1px solid #EDF1F2;
+		width: 160px;
+		margin: 0 auto;
+	}
+	.slider ul a{
+		display: block;
+		height: 60px;
+		font-size: 16px;
+		line-height: 60px;
+		text-align: center;
+		color: #787d82;
+		font-family: '微软雅黑';
+	}
+	.slider ul a.active{
+		color: #F01400;
+		font-weight: bold;
+	}
+	.slider ul a:hover{
+		color: black;
+		font-size: 16px;
+	}
+	 
+	/*u-container*/
+	.u-container {
+		margin-top: 20px;
+
+
+	    margin-left: 240px;
+	    min-height: 589px;
+	}
+	.dynamic{
+		padding-bottom: 21px;
+		border-bottom: 1px solid #CFD5D8;
+	}
+	.dynamic-title{
+		color: #787d82;
+		line-height: 14px;
+		margin-top: 10px;
+		padding-top: 25px;
+		font-size: 14px;
+		text-align: left;
+	}
+	.news{
+		padding-top: 40px;
+		text-align: left;
+		width:100%;
+		 
+
+	}
+	.news p{
+		padding-top: 30px;
+		color: #787d82;
+		font-size: 20px;
+		
+	}
+	 
+	.news p a:hover{
+		color: black;
+		cursor: pointer;
+	}
+	.news .news-time{
+
+		text-align: right;
+
+	}

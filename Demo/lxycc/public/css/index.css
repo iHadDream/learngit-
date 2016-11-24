@@ -1,0 +1,90 @@
+/*---理想与成长---*/
+/*---2016.11.3--*/
+/*---何彪---*/
+/*---首页css---*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: rgb(215,215,215);
+  margin: 0 auto
+}
+.content{
+  margin:0 auto;
+  width: 1280px;
+  min-height: 920;
+  position: relative;
+  overflow: hidden;
+}
+.imgitme{
+  margin: 0 ;
+  width: 1280px ;
+  min-width: 980px ;
+  height: 850px ;
+}
+.footer{
+  position: absolute;
+  top: 850px;
+  left: 312px;
+  width: 1280px;
+  height: 70px;
+ /* color: #ffffff;*/
+  /*background-color: rgb(221,191,119);*/
+  padding-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0); 
+  margin: auto;
+}
+.btn{
+  z-index: 5;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 40px;
+  font-size: 20px;
+  border-radius:25px; 
+}
+.btn-wqhg{
+  padding-left: 0;
+  position: absolute;
+  top:130px;
+  left: 440px;
+  color:#572309;
+}
+.btn-hdjs{
+  padding-right: 30px;
+  position: absolute;
+  top:130px;
+  right: 440px;
+  color:#572309;
+}
+.btn-xytj{
+  position: absolute;
+  top:410px;
+  right: 550px;
+  background-color: #4f8a80;
+}
+.btn-cpms{
+  position: absolute;
+  top:500px;
+  right: 550px;
+  background-color: #4f8a80;
+}
+.btn-wlpx{
+  position: absolute;
+  top:590px;
+  right: 550px;
+  background-color: #4f8a80;
+}
+.btn-zjdb{
+  position: absolute;
+  top:680px;
+  right: 550px;
+  background-color: #4f8a80;
+}

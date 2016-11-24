@@ -1,0 +1,381 @@
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: white;
+	margin: 0 auto;
+	padding: 0;	
+	text-align: center;
+	font-family: "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;	
+	color: #475766;
+	max-width:1366px;
+
+}
+
+
+ul li{
+	list-style: none;
+}
+
+/* ~~ 元素/标签选择器 ~~ */
+ul, ol, dl { /* 由于浏览器之间的差异，最佳做法是在列表中将填充和边距都设置为零。为了保持一致，您可以在此处指定需要的数值，也可以在列表所包含的列表项（LI、DT 和 DD）中指定需要的数值。请注意，除非编写一个更为具体的选择器，否则您在此处进行的设置将会层叠到 .nav 列表。 */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* 删除上边距可以解决边距会超出其包含的 div 的问题。剩余的下边距可以使 div 与后面的任何元素保持一定距离。 */
+	padding-right: 15px;
+	padding-left: 15px; /* 向 div 内的元素侧边（而不是 div 自身）添加填充可避免使用任何方框模型数学。此外，也可将具有侧边填充的嵌套 div 用作替代方法。 */
+}
+a img { /* 此选择器将删除某些浏览器中显示在图像周围的默认蓝色边框（当该图像包含在链接中时） */
+	border: none;
+}
+
+/* ~~ 站点链接的样式必须保持此顺序，包括用于创建悬停效果的选择器组在内。 ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: none; /* 除非将链接设置成极为独特的外观样式，否则最好提供下划线，以便可从视觉上快速识别 */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus {  
+	text-decoration: none;
+}
+
+/* ~~ 此固定宽度容器包含其它 div ~~ */
+.container {
+	width: 100%;
+	background: #FFF;
+	margin: 0 auto; /* 侧边的自动值与宽度结合使用，可以将布局居中对齐 */
+	
+}
+.container h2:hover{
+	color: black;
+	cursor: pointer;
+
+}
+
+/* ~~ 标题未指定宽度。它将扩展到布局的完整宽度。标题包含一个图像占位符，该占位符应替换为您自己的链接徽标 ~~ */
+.header {
+	
+	width:100%;
+	 
+	height: 140px;
+	background-image: url(../images/banner2.jpg);
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+	 display:block;
+
+}
+.header a{
+
+background:  no-repeat;
+margin: 0 auto;
+
+}
+.header h1{
+	float: left;
+	overflow: hidden;
+	clear: both;
+}
+ 
+
+.content {
+
+	padding: 0px 0;
+} 
+.nav ,.nav:visited{
+	
+ 	
+	width: 100%;
+	background-color: #0073B7;
+	height: 38px;
+	line-height: 38px;
+	
+	 
+	border-radius: 1px;
+	
+	 
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: 10px;
+	 
+	 
+	opacity: 1;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 2px solid #ebebeb;
+	
+}
+
+ .nav ul{
+ 	width: 1150px;
+ 	margin: 0 auto;
+ }
+
+.nav li{
+	  
+	float: left;
+	text-align: center;
+	 
+	background-image: url(../images/nav_spliter.gif);
+	background-repeat: no-repeat;
+	background-position: right 12px;
+}
+.nav li a{
+ 	text-align: center;
+	display:block;
+	color:white; 
+	opacity: 0.8;
+	font-family: '微软雅黑', '宋体';
+	font-size: 16px;
+	color: #FFF;
+	padding: 0 38px;
+	display: inline-block;
+	margin: 0 auto;
+	
+	 
+}
+
+a.active{
+	background: rgba(30,91,151,0.95);
+	height: 38px;
+	 
+}
+
+.nav li:hover,.nav li:active,.nav li :focus{
+	color: white;
+	cursor: pointer;
+	
+	 
+	 
+	background: rgba(30,91,151,0.95);
+	height: 38px;
+	}
+
+
+.show{
+
+	width: 90%;
+	 height: 370px;
+	margin:60px auto;
+}
+.jieshao{
+	width: 500px;
+	height: 370px;
+	float: left;
+	padding: 0px 24px 0 24px;
+	position:absolute;
+	overflow: hidden;
+	border-top: 6px #0099e5 solid;
+	border-bottom: 6px #0099e5 solid;
+	background: #00aaff;
+	display: none;
+	z-index: 999;
+	margin-top: -373px;
+	margin-left: 680px;
+	opacity: 0.9;
+	border-radius: 10px;
+	text-align: left;
+	line-height: 28px;
+	color: #fff;
+}
+.show1{
+	display: block;
+}
+.jieshao h4{
+	padding: 0px 0 10px;
+	border-bottom: 1px #37bceb solid;
+	font-size: 20px;
+	text-align: center;
+}
+.jieshao p{
+	overflow: hidden;
+line-height: 25px;
+height: 200px;
+font-size: 14px;
+color: #fff;
+padding-top: 10px;
+}
+
+.jiaowu{
+
+	width: 90%;
+	 margin-top: 20px;
+	border-bottom: 2px solid #ebebeb;
+	border-top: 2px solid #ebebeb;
+	
+	margin-left: auto;
+	margin-right: auto;
+	height: 350px;
+}
+.jiaowu h1{
+	font-size: 18px;
+	margin: 10px;
+	font-weight: normal;
+	color: #333;
+}
+.jiaowu p{
+	
+	margin: 10px 10px 9px 10px;
+	overflow: hidden;
+	height: 72px;
+	line-height: 18px;
+	font-size: 12px;
+	color: #666;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+.jiaowu a{
+	color: #a9a9a9;
+	margin-left: 10px;
+}
+.publicInfo{
+	float: left;
+	margin: 0 30px 20px 20px;
+	overflow: hidden;
+	width: 28%;
+}
+.publicInfo a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+
+}
+.title{
+	text-align: left;
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+	font-size: 22px;
+	margin:0px;
+	padding:0px;
+}
+.more{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	color: #b0b0b0;
+	font-size: 12px;
+}
+.date{
+	background: url(../images/datetip.png);
+	overflow: hidden;
+	width: 60px;
+	height: 65px;
+	padding-top: 14px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	background-repeat: no-repeat;
+}
+.xuexi{
+	clear: both;
+	width: 90%;
+	 height: 350px;
+	border-bottom: 2px solid #ebebeb;
+	margin-left: auto;
+	margin-right: auto;
+}
+.lesson{
+	width:28%;
+	height: 250px;
+	float: left;
+ 	margin:20px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	color: gray;
+
+	
+}
+.lesson img{
+	border-radius: 20px;
+}
+.lesson h2{
+	color: black;
+}
+.zhiliang{	
+	clear: both;
+	width: 90%;
+	 border-bottom: 2px solid #ebebeb;
+	margin-left: auto;
+	margin-right: auto;
+	height: 380px;
+}
+table a img
+{
+opacity:0.7;
+filter:alpha(opacity=70); /* 针对 IE8 以及更早的版本 */
+border-radius: 20px;
+width:300px;
+height: 75px;
+}
+table a img:hover
+{
+opacity:1.0;
+filter:alpha(opacity=100); /* 针对 IE8 以及更早的版本 */
+}
+.footer {
+	clear:both;
+	padding: 10px 0;
+	background:#a0a0a0;
+	font-size:20px;
+	color: #5b5b5b;
+}
+ .footer-center{
+ 	margin-left: auto;
+ 	margin-right: auto;
+	margin-top:10px;
+ 	width: 100%;
+ }
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+
+	.loginTable{
+		width:100%;
+		background-color:#FFF;
+		border: 1px solid #769dc0;
+		-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+		box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+	}
+	
+	.loginTitle {
+		font-size:16px;
+		text-align:center;
+		
+		border: 1px solid #ffffff;
+		border-top: none;
+		background-color: #abd6ff;
+		background-image: url(titlebar.png);
+		background-repeat: repeat-x;
+		padding: 5px 7px 4px 7px;
+		font-family: helvetica,arial,sans-serif;
+	}
+	.titleText{
+		font-size:48px;
+		padding-left:30px;
+		padding-top:20px;
+	}
+	
+	.loginItemTop{
+		padding-top: 30px;
+		padding-bottom:5px;
+	}
+	.loginItemBottom{
+		padding-top: 5px;
+		padding-bottom:20px;
+	}

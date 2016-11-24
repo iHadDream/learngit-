@@ -1,0 +1,207 @@
+ body {
+          font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+           
+          margin: 0 auto;
+          padding: 0;
+		  max-width:1366px;
+           
+         
+      }
+      .content ul{
+          padding: 0;
+      }
+     
+    #pagnation a{
+        padding-right:5px;
+    }
+    .current {
+        color:blue;
+    }
+    #pagnation{
+        
+        margin:20px auto; 
+     }
+    .numlink,#prev,#next
+    {
+    background-color: #F5F5F5;
+    border: 1px solid #EBEBEB;
+    color: #0072BC;
+    font-weight: normal;
+    margin-left: 10px;
+    padding: 2px 7px;
+    text-decoration: none;
+    width: 22px;;
+    }
+    .current
+    {
+     background-color: #DDEEFF;
+    border: 1px solid #BBDDFF;
+    color: #0072BC;
+    cursor: default;
+    margin-left: 10px;
+    padding: 2px 7px;
+    text-decoration: none;  
+    }
+    .stripe_tb{
+      table-layout:fixed;
+      width: 780px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .stripe_tb tr{
+      margin-top:10px;
+    }
+    .stripe_tb td{
+      
+    }
+    .stripe_tb a{
+        color: gray;
+        cursor: pointer;
+        text-decoration: none;
+         
+    }
+    .stripe_tb a:hover{
+         color: #37acd3;
+    }
+    .stripe_tb tr.alt td{
+      background:#f7f7f7;
+      
+
+    } /*这行将给所有偶数行加上背景色*/  
+  .stripe_tb tr.over td{
+    background:#ecf6fc;
+  } /*这个将是鼠标高亮行的背景色 */
+  .news{
+    width: 400px;
+    height: 48px;
+    line-height: 38px;
+    text-decoration: none;
+    text-align:left;
+    padding-left: 20px; 
+
+    
+  }
+  .reply{
+    color:rgb(95,182,231); 
+    font-weight: bold;
+
+  }
+  .date{
+    width:100px;
+    text-align: center;
+     
+  }
+  .qANavigation{
+
+    color: black;
+    
+     border-bottom: 10px solid #148bdd;
+     
+    width: 780px;
+    height: 40px;
+     
+    
+  }
+  .qANavigation ul li{
+   color:#356aa0;
+    float: left;
+    width: 80px;
+    height: 25px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-weight: bold;
+    list-style: none;
+    font-size: 18px;
+    font-family:'微软雅黑';
+    padding:5px 9px 5px 2px;
+    margin-left:-1px;
+    cursor:pointer; 
+  }
+   .qANavigation a{
+    color:#356aa0;
+    float: left;
+    width: 80px;
+    height: 25px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-weight: bold;
+    list-style: none;
+    font-size: 18px;
+    font-family:'微软雅黑';
+     
+    margin-left:-1px;
+    cursor:pointer; 
+    text-decoration:none;
+  }
+  .qANavigation .search{
+    margin-top: 6px;
+     margin-left: 140px;
+  }
+  .contentTitle{
+    margin-bottom: 10px;
+	font-weight:bold;
+  }
+  .news{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow:ellipsis;
+  }
+  /*三个切换卡*/
+  .usually{
+     
+  }
+  .question {
+     background-color:rgba(200,200,200,0.5);
+     width:780px;
+  }
+  .button {
+            display: inline-block;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font: 16px/100% 'Microsoft yahei',Arial, Helvetica, sans-serif;
+            padding: .5em 2em .55em;
+            text-shadow: 0 1px 1px rgba(0,0,0,.3);
+            
+        }
+         
+
+            
+
+        .blue {
+            color: #d9eef7;
+            border: solid 1px #0076a3;
+            background: #0095cd;
+            background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+            background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+            filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+        }
+        .blue:hover {
+            background: #007ead;
+            background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+            background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+         filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
+        }
+        .blue:active {
+            color: #80bed6;
+            background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
+            background: -moz-linear-gradient(top,  #0078a5,  #00adee);
+         filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
+        }
+  #tab-content .hide{
+    display: none;
+  }
+  #tab-content p a{
+  	color:#475766;
+  }
+  .hide{
+    display: none;
+  }
+  .qANavigation .selected{
+    color:#356aa0;
+     
+     border-bottom: 4px solid #148bdd;
+
+  }
+   

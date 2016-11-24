@@ -1,0 +1,48 @@
+﻿@charset "utf-8";
+body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {margin:0;padding:0;-webkit-text-size-adjust:none}
+h1, h2, h3, h4, h5, h6{font-size:12px;font-weight:normal}
+a img {border:0}
+body{color:#333;text-align:center;font:12px "华文仿宋";}
+ul, ol, li {list-style-type:none;vertical-align:0}
+a {outline-style:none;color:#535353;text-decoration:none}
+a:hover{color:#D40000;text-decoration:none}
+
+/* itagBox */
+.itagBox{align:center; margin:20px 20px 0px 185px;width:980px;overflow:hidden;}
+.itagBox ul{width:980px;}
+.itagBox ul li{position:relative;float:left;width:190px;background:#fff;height:190px; overflow:hidden;margin:0px 6px 6px 0px;}
+.itagBox ul .votetext
+{
+    width:100%;
+    overflow:hidden;
+    height:150px;
+    background-image:url(../images/votebb.jpg);
+    background-position:center center;
+    background-repeat:repeat;
+    border-bottom:1px dotted #ddd;
+}
+.itagBox ul .votedo
+{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    
+}
+.votedo .cvotenum
+{
+    width:190px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    margin-left:0px;
+    font-size:20px;
+    font-weight: bold;
+    color:#cc0000;
+}
+
+.itagBox ul .tag1{width:190px;}
+.tag_yellow{color:#fff601;}
+.tag_txt{text-align:center;line-height:40px;padding-top:12px; font-size:23px; font-weight:700; font-family:微软雅黑;color:#474747; }
+.itagBox ul li a:hover{color:#000;text-decoration:none;}
+.itagBox ul .tag2{background:#2E71B3;}
+.itagBox ul .tag3{background:#2E71B3;}

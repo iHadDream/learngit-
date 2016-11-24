@@ -1,0 +1,33 @@
+ #my-form{
+              width:800px;
+              height:300px;
+              margin:0 auto;
+              border:1px solid #ccc;
+              padding:3em;
+              border-radius:3px;
+              box-shadow:0 0 2px rgba(0,0,0,.2);
+            }
+
+    .tixing{
+              
+              padding-top: 10px;
+              padding-bottom: 0px;
+            }
+    .banner{
+              padding-left:20px;
+            }
+    .lianjie a{
+        font-family: "微软雅黑";
+        color:#bbb;
+        margin-left: 10px;
+
+   
+      }
+.lianjie{
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+#rea{
+      width: 400px;
+      height:70px;
+   }

@@ -1,0 +1,102 @@
+<style type="text/css">
+
+
+	/* //calendar*/
+	 
+		
+		.calendar{
+			margin-left:-120px; 
+		}
+		.calendar td{
+			width: 200px;
+			height:  80px;
+			text-align: center;
+		}
+		.timeinfo{
+			position: relative;
+			background: rgba(0,94,141,0.7);
+			font-size: 20px;
+			height: 40px;
+			text-align: center;
+			border: 1px #eee solid;
+			color: white;
+		}
+		/*.calendar td:hover{
+			background-color:rgb(129, 208, 242);
+			color: white;
+			cursor: pointer;
+		}*/
+		.calendar_1 td.ui-selecting{
+			background-color: gray;
+			opacity: 0.5;
+		}
+
+		.calendar_1 td.ui-selected{
+			background-color: rgb(129, 208, 242);
+			color: white;
+		}
+		/*.calendar_color{
+			background-color:rgb(129, 208, 242);
+			color: white;
+			cursor: pointer;
+		}*/
+		#week{
+
+			background-color: gray;
+			opacity: 0.5;
+			font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif; 
+			color: #000;
+		}
+		#week td{
+			height: 20px;
+		}
+ 
+/*button*/
+ .btn_1{
+ 	margin-top:10px;
+ 	margin-left:350px;
+ }
+ .button {
+            display: inline-block;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font: 16px/100% 'Microsoft yahei',Arial, Helvetica, sans-serif;
+            padding: .5em 2em .55em;
+            text-shadow: 0 1px 1px rgba(0,0,0,.3);
+            -webkit-border-radius: .5em; 
+            -moz-border-radius: .5em; border-radius: .5em;
+        }
+        .bigrounded {
+            -webkit-border-radius: 2em;
+            -moz-border-radius: 2em;
+            border-radius: 2em;
+        }
+
+            
+
+        .blue {
+            color: #d9eef7;
+            border: solid 1px #0076a3;
+            background: #0095cd;
+            background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+            background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+            filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+        }
+        .blue:hover {
+            background: #007ead;
+            background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+            background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+         filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
+        }
+        .blue:active {
+            color: #80bed6;
+            background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
+            background: -moz-linear-gradient(top,  #0078a5,  #00adee);
+         filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
+        }
+        /*button css*/
+        
+
+</style>

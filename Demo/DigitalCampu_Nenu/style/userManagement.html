@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/educated.css" type="text/css">
+<script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+<script src="js\jquery-ui-1.11.4.custom\jquery-ui.min.js"></script>
+ 
+<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+<link rel="stylesheet" type="text/css" href="css/questionAnswer.css">
+<title>教务管理系统-用户管理</title>
+ <script type="text/javascript">
+   
+      
+            //隔行变色  
+        $(document).ready(function(){  
+                  
+                 $(".stripe_tb tr").mouseover(function(){ //如果鼠标移到class为stripe_tb的表格的tr上时，执行函数  
+                 $(this).addClass("over");}).mouseout(function(){ //给这行添加class值为over，并且当鼠标一出该行时执行函数  
+                 $(this).removeClass("over");}) //移除该行的class  
+                 $(".stripe_tb tr:even").addClass("alt"); //给class为stripe_tb的表格的偶数行添加class值为alt  
+                  
+            });  
+        
+   
+        $(function () {  
+            $("#selectAll").click(function () {//全选  
+                $("#playList :checkbox").attr("checked", true);  
+            });  
+  
+            $("#unSelect").click(function () {//全不选  
+                $("#playList :checkbox").attr("checked", false);  
+            });  
+  
+            $("#reverse").click(function () {//反选  
+                $("#playList :checkbox").each(function () {  
+                    $(this).attr("checked", !$(this).attr("checked"));  
+                });  
+            });  
+        });  
+      
+   </script>
+    <style>
+  .qANavigation .search{
+    margin-top: 6px;
+     margin-left: 267px;
+  }
+  .btn6{
+    cursor: pointer;
+  }
+  form{
+    text-align: left;
+  }
+
+    </style>
+   
+</head>
+
+<body>
+
+<div class="container">
+  
+  	
+  	
+  
+  <div class="header">
+      <img src="images/banner2.jpg" alt="在此处插入徽标" name="logo"  id="Insert_logo" style=" display:block;" />
+  </div>
+  <!-- end .header -->
+     <div class="lianjie">
+      <span>您的位置:&nbsp;<a href="index.html">首页</a>&gt;&gt;
+      <a href="educatedManage.html">教务管理系统</a>&gt;&gt;<a href="#">用户管理</a>
+      <span style="float:right;margin-right:50px;">admin  </span>
+   </div>
+    <div class="sidebar1">
+   
+     <img src="images/jiaowuchu.png">
+      <!-- 学生网上服务中心 -->
+	     <ol class="rounded-list">
+	      	  <li><a href="noticeTeacher.html">教务公告</a></li>
+          <li><a href="qAteacher.html">教务答疑</a></li>
+          <li><a href="lendClassTeacher.html">借教室</a></li>
+          <li><a href="feedbackTeacher.html">教学信息反馈</a></li>         
+          <li><a href="singleCenter.html" target="blank">个人中心</a></li>
+           <li><a href="userManagement.html">用户管理</a></li>
+	      </ol>
+	   
+      
+	   
+     
+    <p>&nbsp;</p>
+    <!-- end .sidebar1 --></div>
+ 
+      <div class="content"  style="padding-top:1px;">
+       
+         
+           
+              <div class="qANavigation">
+                  <ul>
+                    <li class="selected ">导出用户 </li>
+                    <li  > 导入用户 </li>
+                    <li  >新增用户</li>
+                     
+                    
+                  </ul>
+                  <input type="text" class="search" placeholder="请输入关键词"></input>
+                  <input type="button" class="blue bigrounded" value="搜索" />
+                        
+              </div>
+       <div id="tab-content">    <!-- 三个切换卡 -->   
+        
+        <table class="stripe_tb" id="playList" >
+             
+          <tr class="contentTitle">
+            <td>选择</td><td>序号</td><td>姓名</td><td >学号</td><td >性别</td><td >邮箱</td><td >操作</td>
+          </tr>
+            <tr>   
+              <td><input type="checkbox" name="checkbox1" value="1"> </td>
+              <td>1</td>         
+              <td class=" "><a href="qA_1.html"> 天航狗</a></td>
+              <td>110</td>
+              
+              <td class="">男</td>
+              <td>去阿斯蒂芬.com</td>
+               <td class="">修改</td>
+            </tr>
+            <tr> 
+              <td><input type="checkbox" name="checkbox1" value="1"> </td>
+              <td>1</td>         
+              <td class=" "><a href="qA_1.html"> 天航狗</a></td>
+              <td>110</td>
+              
+              <td class="">男</td>
+              <td>去阿斯蒂芬.com</td>
+               <td class="">修改</td>
+            </tr>
+            <tr> 
+                <td><input type="checkbox" name="checkbox1" value="1"> </td>
+              <td>1</td>         
+              <td class=" "><a href="qA_1.html"> 天航狗</a></td>
+              <td>110</td>
+              
+              <td class="">男</td>
+              <td>去阿斯蒂芬.com</td>
+               <td class="">修改</td>
+            </tr>
+            <tr>
+              <td colspan="7">
+                <input type="button" value="全选" id="selectAll" />  
+                <input type="button" value="全不选" id="unSelect" />  
+                <input type="button" value="反选" id="reverse" /> 
+                <input type="button" class="blue button " value="导出" id="" />
+             </td>
+            </tr>
+          </table>
+
+            
+           
+        
+               
+           
+
+           
+          <table class="stripe_tb hide" style="background-color:#ebebeb;">
+             
+           <tr  >
+           <td style="width:200px;height:300px;"> 
+              <img src="images/into.png">
+           </td>
+            <td > 
+              <p style="text-align:left;">1.导入用户只支持导入EXCEL表文件格式.</p>
+              <p style="text-align:left;">2.请将EXCEL表格中的实体属性与用户管理列表的实体属性保持一致.</p>
+              <form method="post" action="" enctype="multipart/form-data">
+                <input type="file" id="f2" class="button "> 
+                <input type="submit" name="submit" value="导入"  class="blue">
+              </form>
+            </td>
+          </tr>
+             
+          
+          
+          </table>
+           
+        
+               
+          
+          <table class="stripe_tb hide" style="background-color:#148bdd;"  >
+                  
+       <tr>
+       <td style="width:200px;">
+         <img src="images/join.png">
+       </td>
+       <td>
+            <form>
+              <legend></legend>
+              <p>
+                <label for="identity">身份:&nbsp;&nbsp;&nbsp;
+                <select>
+                  <option>学生</option>
+                  <option>教师</option>
+                  <option>导员</option>
+                  <option>教务秘书</option>
+                <select>
+                </label>
+              </p>
+              <p>
+                <label for="username">姓名:&nbsp;&nbsp;&nbsp;
+                <input type="text" name="username" placeholder="输入文本……">
+                </label>
+              </p>
+              <p>
+                <label for="sex">性别:&nbsp;&nbsp;&nbsp;</label>
+                <label for="sex">
+                <input type="radio" name="女" placeholder="" />女
+                </label>
+                <label for="sex">
+                <input type="radio" name="男" placeholder="" />男
+                </label>
+              </p>
+              
+              <p>
+              <label for="grade">年级:&nbsp;&nbsp;&nbsp;
+                <select>
+                  <option>2013级</option>
+                  <option>2014级</option>
+                  <option>2015级</option>
+                  <option>2015级</option>
+                <select>
+              </label>
+              </p>
+              <p>
+                <label for="phonenumber">学号:&nbsp;&nbsp;&nbsp;
+                <input type="text" name="phonenumber" placeholder="输入文本……">
+                </label>
+              </p>
+              <p>
+                <label for="email">邮箱:&nbsp;&nbsp;&nbsp;
+                <input type="text" name="usernumber" placeholder="输入文本……">
+                </label>
+              </p>
+              <p>
+                <label for="note">备注:&nbsp;&nbsp;&nbsp;
+                <input type="textarea" name="note" placeholder="输入文本……">
+                </label>
+              </p>
+              <p>
+                <label for="submit">
+                <input type="submit" name="submit" value="注册" class="blue button">
+                </label>
+              </p>
+
+            </form>
+         
+       </td></tr>
+            
+          
+          </table>
+
+    </div> <!-- 结束三个切换卡 -->    
+        
+         <script type="text/javascript">
+     
+         $('.qANavigation li').click(function(){
+         $(this).addClass("selected").siblings().removeClass("selected");//removeClass就是删除当前其他类；只有当前对象有addClass("selected")；siblings()意思就是当前对象的同级元素，removeClass就是删除；
+         $("#tab-content > table").hide().eq($('.qANavigation li').index(this)).show();
+         }); 
+        
+          
+        </script>
+     
+  
+
+  <!-- end .content --></div>
+
+  <div class="footer">
+     
+     <div class="footer-center">
+   		<img src="images/footer-logo.png">
+    </div>
+    <div class="footer-center" >版权所有©东北师范大学 信息与软件工程学院</div>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

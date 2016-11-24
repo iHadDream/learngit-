@@ -1,0 +1,7 @@
+现在已经有：
+分组一：vote_ftp  密码：yiban@yiban
+
+添加分组的命令：
+useradd -g ftpusers -d /opt/lampp/htdocs/webXXX -s /sbin/nologin webXXX
+设置密码命令：
+passwd webXXX 
